@@ -9,9 +9,9 @@
         "TrsrBondMkt": {
             "opngDtTm": "2025-08-12T09:25:00",
             "clsgDtTm": "2025-08-13T05:00:00",
-            "qtnDtTm": "2025-08-12T15:27:24.857",
-            "stsCd": 1,
-            "sts": "Aberto"
+            "qtnDtTm": "2025-08-12T18:00:05.397",
+            "stsCd": 4,
+            "sts": "Fechado"
         },
         "TrsrBdTradgList": [
             {
@@ -2067,7 +2067,7 @@
         ],
         "BizSts": {
             "cd": null,
-            "dtTm": "2025-08-12 15:44:02.412"
+            "dtTm": "2025-08-12 19:14:01.066"
         }
     }
 }
