@@ -7,7 +7,7 @@ ssh-add [camiho para a chave ssh]
 # Navegue até o diretório do repositório
 cd [caminho do repositorio local]/TD
 
-DISPLAY=:0 [caminho do executável]/python3 TesouroDireto_Dia.py
+DISPLAY=:0 [caminho do executável]/python3 TesouroDireto_Dia_v2.py
 
 # Adicione alterações ao staging
 git add .
