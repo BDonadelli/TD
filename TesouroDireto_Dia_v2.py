@@ -16,11 +16,11 @@ chrome_options.add_experimental_option("prefs", {
 })
 chrome_options.add_argument('--headless')  # modo sem GUI
 
-try:
-    os.remove("/home/yair/GHub/TD/data/rendimento-resgatar.csv")
-    os.remove("/home/yair/GHub/TD/data/rendimento-investir.csv")    
-except :   
-    pass
+# try:
+#     os.remove("/home/yair/GHub/TD/data/rendimento-resgatar.csv")
+#     os.remove("/home/yair/GHub/TD/data/rendimento-investir.csv")    
+# except :   
+#     pass
 
 resgate = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-resgatar-csv?download=true"
 investe = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-investir-csv?download=true"

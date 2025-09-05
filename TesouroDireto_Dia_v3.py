@@ -29,11 +29,11 @@ chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--window-size=1920x1080')
 
 # Remover arquivos existentes
-try:
-    os.remove("/home/yair/GHub/TD/data/rendimento-resgatar.csv")
-    os.remove("/home/yair/GHub/TD/data/rendimento-investir.csv")
-except FileNotFoundError:
-    pass
+# try:
+#     os.remove("/home/yair/GHub/TD/data/rendimento-resgatar.csv")
+#     os.remove("/home/yair/GHub/TD/data/rendimento-investir.csv")
+# except FileNotFoundError:
+#     pass
 
 # URLs dos arquivos
 resgate = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-resgatar-csv"
