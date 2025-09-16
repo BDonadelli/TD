@@ -2,6 +2,8 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 import os
 import time
 
@@ -22,22 +24,22 @@ chrome_options.add_experimental_option("prefs", {
 })
 
 # Adicionar argumentos para melhor funcionamento
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-chrome_options.add_argument('--disable-gpu')
-chrome_options.add_argument('--window-size=1920x1080')
+# chrome_options.add_argument('--headless')
+# chrome_options.add_argument('--no-sandbox')
+# chrome_options.add_argument('--disable-dev-shm-usage')
+# chrome_options.add_argument('--disable-gpu')
+# chrome_options.add_argument('--window-size=1920x1080')
 
 # Remover arquivos existentes
-# try:
-#     os.remove("/home/yair/GHub/TD/data/rendimento-resgatar.csv")
-#     os.remove("/home/yair/GHub/TD/data/rendimento-investir.csv")
-# except FileNotFoundError:
-#     pass
+try:
+     os.rename(download_dir+"rendimento-resgatar.csv", download_dir+"rendimento-resgatar-velho.csv")
+     os.rename(download_dir+"rendimento-investir.csv" , download_dir+"rendimento-investir-velho.csv")
+except FileNotFoundError:
+     pass
 
 # URLs dos arquivos
-resgate = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-resgatar-csv"
-investe = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-investir-csv"
+resgate = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-resgatar-csv?download=true"
+investe = "https://www.tesourodireto.com.br/documents/d/guest/rendimento-investir-csv?download=true"
 
 def wait_for_download(download_path, filename, timeout=30):
     """Aguarda o download ser concluído"""
@@ -52,7 +54,8 @@ def wait_for_download(download_path, filename, timeout=30):
     return False
 
 # Inicializar o driver
-driver = webdriver.Chrome(options=chrome_options)
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service,options=chrome_options)
 
 try:
     print("Iniciando download do arquivo de resgate...")
@@ -74,14 +77,16 @@ try:
         print("✗ Timeout no download do arquivo de investimento")
 
 finally:
-    driver.quit()  # Use quit() em vez de close() para fechar todas as janelas
+    driver.quit()  
 
 # Verificar se os arquivos foram baixados
-arquivos_esperados = ["rendimento-resgatar.csv", "rendimento-investir.csv"]
+arquivos_esperados = ["rendimento-resgatar", "rendimento-investir"]
 for arquivo in arquivos_esperados:
-    caminho_completo = os.path.join(download_dir, arquivo)
+    caminho_completo = os.path.join(download_dir, arquivo+".csv")
+    print(caminho_completo)
     if os.path.exists(caminho_completo):
         tamanho = os.path.getsize(caminho_completo)
         print(f"✓ {arquivo}: {tamanho} bytes")
     else:
         print(f"✗ {arquivo}: não encontrado")
+        os.rename( os.path.join(download_dir, arquivo+"-velho.csv"),caminho_completo)
