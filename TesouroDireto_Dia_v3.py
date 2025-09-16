@@ -32,6 +32,11 @@ chrome_options.add_experimental_option("prefs", {
 
 # Remover arquivos existentes
 try:
+     os.remove(download_dir+"rendimento-resgatar-velho.csv")
+     os.remove(download_dir+"rendimento-investir-velho.csv")
+except FileNotFoundError:
+    pass
+try:
      os.rename(download_dir+"rendimento-resgatar.csv", download_dir+"rendimento-resgatar-velho.csv")
      os.rename(download_dir+"rendimento-investir.csv" , download_dir+"rendimento-investir-velho.csv")
 except FileNotFoundError:
@@ -90,3 +95,27 @@ for arquivo in arquivos_esperados:
     else:
         print(f"✗ {arquivo}: não encontrado")
         os.rename( os.path.join(download_dir, arquivo+"-velho.csv"),caminho_completo)
+
+
+from datetime import datetime
+import glob
+
+
+os.chdir('data')
+
+# 2. Procurar arquivo com formato DD-MM-AAAA_HH-MM-SS
+arquivos_antigos = glob.glob('??-??-????_??-??-??.txt')
+
+# 3. Remover arquivo se existir
+if arquivos_antigos:
+    os.remove(arquivos_antigos[0])
+    print(f"Removido: {arquivos_antigos[0]}")
+
+# 4. Criar novo arquivo com timestamp atual
+timestamp = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+nome_arquivo = f"{timestamp}.txt"
+
+with open(nome_arquivo, 'w', encoding='utf-8') as f:
+    f.write(f"Criado em: {datetime.now().strftime('%d/%m/%Y às %H:%M:%S')}")
+
+print(f"Criado: {nome_arquivo}")        
