@@ -5,55 +5,55 @@ Tesouro Selic 2028;SELIC + 0,059%;R$ 17.531,02;01/03/2028
 Tesouro Selic 2029;SELIC + 0,0906%;R$ 17.502,36;01/03/2029
 Tesouro Selic 2031;SELIC + 0,1145%;R$ 17.448,64;01/03/2031
 Tesouro Prefixado 2026;14,92%;R$ 970,10;01/01/2026
-Tesouro Prefixado com Juros Semestrais 2027;14,05%;R$ 986,92;01/01/2027
-Tesouro Prefixado 2027;14,03%;R$ 853,52;01/01/2027
-Tesouro Prefixado 2028;13,50%;R$ 756,62;01/01/2028
-Tesouro Prefixado com Juros Semestrais 2029;13,60%;R$ 943,35;01/01/2029
-Tesouro Prefixado 2029;13,54%;R$ 667,21;01/01/2029
-Tesouro Prefixado com Juros Semestrais 2031;13,93%;R$ 895,18;01/01/2031
-Tesouro Prefixado 2031;13,84%;R$ 511,32;01/01/2031
-Tesouro Prefixado 2032;14,00%;R$ 445,28;01/01/2032
+Tesouro Prefixado com Juros Semestrais 2027;14,07%;R$ 986,72;01/01/2027
+Tesouro Prefixado 2027;14,05%;R$ 853,34;01/01/2027
+Tesouro Prefixado 2028;13,51%;R$ 756,47;01/01/2028
+Tesouro Prefixado com Juros Semestrais 2029;13,61%;R$ 943,12;01/01/2029
+Tesouro Prefixado 2029;13,55%;R$ 667,03;01/01/2029
+Tesouro Prefixado com Juros Semestrais 2031;13,94%;R$ 894,87;01/01/2031
+Tesouro Prefixado 2031;13,85%;R$ 511,09;01/01/2031
+Tesouro Prefixado 2032;14,02%;R$ 444,79;01/01/2032
 Tesouro Prefixado com Juros Semestrais 2033;14,03%;R$ 859,29;01/01/2033
 Tesouro Prefixado com Juros Semestrais 2035;14,10%;R$ 831,99;01/01/2035
-Tesouro IPCA+ 2026;IPCA + 10,18%;R$ 4.203,36;15/08/2026
-Tesouro IPCA+ com Juros Semestrais 2026;IPCA + 10,18%;R$ 4.457,96;15/08/2026
-Tesouro IPCA+ 2029;IPCA + 8,13%;R$ 3.453,46;15/05/2029
-Tesouro IPCA+ com Juros Semestrais 2030;IPCA + 8,10%;R$ 4.247,05;15/08/2030
+Tesouro IPCA+ 2026;IPCA + 10,23%;R$ 4.201,77;15/08/2026
+Tesouro IPCA+ com Juros Semestrais 2026;IPCA + 10,23%;R$ 4.456,30;15/08/2026
+Tesouro IPCA+ 2029;IPCA + 8,14%;R$ 3.452,32;15/05/2029
+Tesouro IPCA+ com Juros Semestrais 2030;IPCA + 8,11%;R$ 4.245,41;15/08/2030
 Tesouro IPCA+ com Juros Semestrais 2032;IPCA + 8,02%;R$ 4.148,42;15/08/2032
 Tesouro IPCA+ 2035;IPCA + 7,76%;R$ 2.237,79;15/05/2035
 Tesouro IPCA+ com Juros Semestrais 2035;IPCA + 7,84%;R$ 4.141,54;15/05/2035
-Tesouro IPCA+ 2040;IPCA + 7,48%;R$ 1.572,53;15/08/2040
-Tesouro IPCA+ com Juros Semestrais 2040;IPCA + 7,62%;R$ 3.983,92;15/08/2040
-Tesouro IPCA+ 2045;IPCA + 7,36%;R$ 1.144,13;15/05/2045
+Tesouro IPCA+ 2040;IPCA + 7,50%;R$ 1.568,22;15/08/2040
+Tesouro IPCA+ com Juros Semestrais 2040;IPCA + 7,64%;R$ 3.976,88;15/08/2040
+Tesouro IPCA+ 2045;IPCA + 7,35%;R$ 1.146,20;15/05/2045
 Tesouro IPCA+ com Juros Semestrais 2045;IPCA + 7,53%;R$ 3.996,38;15/05/2045
 Tesouro IPCA+ 2050;IPCA + 7,20%;R$ 819,44;15/08/2050
 Tesouro IPCA+ com Juros Semestrais 2050;IPCA + 7,44%;R$ 3.899,04;15/08/2050
 Tesouro IPCA+ com Juros Semestrais 2055;IPCA + 7,40%;R$ 3.944,44;15/05/2055
 Tesouro IPCA+ com Juros Semestrais 2060;IPCA + 7,42%;R$ 3.834,84;15/08/2060
-Tesouro Renda+ Aposentadoria Extra 2030;IPCA + 7,55%;R$ 1.776,61;15/12/2049
+Tesouro Renda+ Aposentadoria Extra 2030;IPCA + 7,56%;R$ 1.774,66;15/12/2049
 Tesouro Renda+ Aposentadoria Extra 2035;IPCA + 7,39%;R$ 1.268,68;15/12/2054
 Tesouro Renda+ Aposentadoria Extra 2040;IPCA + 7,28%;R$ 910,22;15/12/2059
-Tesouro Renda+ Aposentadoria Extra 2045;IPCA + 7,22%;R$ 651,71;15/12/2064
+Tesouro Renda+ Aposentadoria Extra 2045;IPCA + 7,21%;R$ 653,34;15/12/2064
 Tesouro Renda+ Aposentadoria Extra 2050;IPCA + 7,19%;R$ 465,00;15/12/2069
 Tesouro Renda+ Aposentadoria Extra 2055;IPCA + 7,20%;R$ 328,17;15/12/2074
-Tesouro Renda+ Aposentadoria Extra 2060;IPCA + 7,22%;R$ 230,47;15/12/2079
-Tesouro Renda+ Aposentadoria Extra 2065;IPCA + 7,22%;R$ 162,99;15/12/2084
-Tesouro Educa+ 2026;IPCA + 8,37%;R$ 3.695,92;15/12/2030
-Tesouro Educa+ 2027;IPCA + 8,19%;R$ 3.432,66;15/12/2031
+Tesouro Renda+ Aposentadoria Extra 2060;IPCA + 7,21%;R$ 231,37;15/12/2079
+Tesouro Renda+ Aposentadoria Extra 2065;IPCA + 7,21%;R$ 163,70;15/12/2084
+Tesouro Educa+ 2026;IPCA + 8,38%;R$ 3.695,06;15/12/2030
+Tesouro Educa+ 2027;IPCA + 8,20%;R$ 3.431,54;15/12/2031
 Tesouro Educa+ 2028;IPCA + 8,08%;R$ 3.188,86;15/12/2032
 Tesouro Educa+ 2029;IPCA + 8,00%;R$ 2.963,92;15/12/2033
 Tesouro Educa+ 2030;IPCA + 7,94%;R$ 2.755,06;15/12/2034
 Tesouro Educa+ 2031;IPCA + 7,88%;R$ 2.563,88;15/12/2035
-Tesouro Educa+ 2032;IPCA + 7,81%;R$ 2.390,69;15/12/2036
+Tesouro Educa+ 2032;IPCA + 7,82%;R$ 2.388,81;15/12/2036
 Tesouro Educa+ 2033;IPCA + 7,75%;R$ 2.230,29;15/12/2037
-Tesouro Educa+ 2034;IPCA + 7,68%;R$ 2.085,37;15/12/2038
-Tesouro Educa+ 2035;IPCA + 7,62%;R$ 1.950,28;15/12/2039
-Tesouro Educa+ 2036;IPCA + 7,57%;R$ 1.823,41;15/12/2040
-Tesouro Educa+ 2037;IPCA + 7,53%;R$ 1.704,19;15/12/2041
-Tesouro Educa+ 2038;IPCA + 7,49%;R$ 1.593,95;15/12/2042
-Tesouro Educa+ 2039;IPCA + 7,45%;R$ 1.491,83;15/12/2043
-Tesouro Educa+ 2040;IPCA + 7,43%;R$ 1.393,11;15/12/2044
+Tesouro Educa+ 2034;IPCA + 7,69%;R$ 2.083,34;15/12/2038
+Tesouro Educa+ 2035;IPCA + 7,63%;R$ 1.948,19;15/12/2039
+Tesouro Educa+ 2036;IPCA + 7,59%;R$ 1.819,19;15/12/2040
+Tesouro Educa+ 2037;IPCA + 7,55%;R$ 1.699,92;15/12/2041
+Tesouro Educa+ 2038;IPCA + 7,51%;R$ 1.589,67;15/12/2042
+Tesouro Educa+ 2039;IPCA + 7,47%;R$ 1.487,54;15/12/2043
+Tesouro Educa+ 2040;IPCA + 7,44%;R$ 1.390,98;15/12/2044
 Tesouro Educa+ 2041;IPCA + 7,40%;R$ 1.303,64;15/12/2045
 Tesouro Educa+ 2042;IPCA + 7,37%;R$ 1.220,66;15/12/2046
-Tesouro Educa+ 2043;IPCA + 7,35%;R$ 1.141,63;15/12/2047
-Tesouro IGPM+ com Juros Semestrais 2031;IGP-M + 8,11%;R$ 7.696,63;01/01/2031
+Tesouro Educa+ 2043;IPCA + 7,34%;R$ 1.143,71;15/12/2047
+Tesouro IGPM+ com Juros Semestrais 2031;IGP-M + 8,12%;R$ 7.693,78;01/01/2031
