@@ -1,10 +1,10 @@
 ﻿Título;Rendimento anual do título;Investimento mínimo;Preço unitário de investimento;Vencimento do Título
 Tesouro Selic 2028;SELIC + 0,0495%;R$ 176,41;R$ 17.641,96;01/03/2028
 Tesouro Selic 2031;SELIC + 0,1015%;R$ 175,67;R$ 17.567,69;01/03/2031
-Tesouro Prefixado 2028;13,12%;R$ 7,66;R$ 766,34;01/01/2028
-Tesouro Prefixado 2032;13,60%;R$ 4,57;R$ 457,59;01/01/2032
-Tesouro Prefixado com Juros Semestrais 2035;13,71%;R$ 8,53;R$ 853,15;01/01/2035
-Tesouro IPCA+ 2029;IPCA + 7,89%;R$ 34,95;R$ 3.495,26;15/05/2029
+Tesouro Prefixado 2028;13,10%;R$ 7,66;R$ 766,63;01/01/2028
+Tesouro Prefixado 2032;13,59%;R$ 4,57;R$ 457,83;01/01/2032
+Tesouro Prefixado com Juros Semestrais 2035;13,70%;R$ 8,53;R$ 853,57;01/01/2035
+Tesouro IPCA+ 2029;IPCA + 7,88%;R$ 34,96;R$ 3.496,40;15/05/2029
 Tesouro IPCA+ com Juros Semestrais 2035;IPCA + 7,51%;R$ 42,49;R$ 4.249,11;15/05/2035
 Tesouro IPCA+ 2040;IPCA + 7,20%;R$ 16,40;R$ 1.640,55;15/08/2040
 Tesouro IPCA+ com Juros Semestrais 2045;IPCA + 7,26%;R$ 41,22;R$ 4.122,98;15/05/2045
