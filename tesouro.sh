@@ -10,7 +10,7 @@ cd ~/GHub/TD
 # Ative o ambiente Python pythorix
 source ~/bin/pythorix/bin/activate
 
-DISPLAY=:0 ~/bin/pythorix/bin/python TesouroDireto_Dia_v2.py
+DISPLAY=:0 ~/bin/pythorix/bin/python TesouroDireto_Dia_v3.py
 
 # Adicione alterações ao staging
 git add .
