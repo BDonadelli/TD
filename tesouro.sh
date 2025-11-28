@@ -2,7 +2,7 @@
 eval "$(ssh-agent -s)"
 
 # Adicione a chave ao agente
-ssh-add [camiho para a chave ssh]
+ssh-add ~/.ssh/id_rsa
 
 # Navegue até o diretório do repositório
 cd ~/GHub/TD
