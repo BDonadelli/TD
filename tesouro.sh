@@ -7,7 +7,10 @@ ssh-add ~/.ssh/id_rsa
 # Navegue até o diretório do repositório
 cd ~/GHub/TD
 
-DISPLAY=:0 python3 TesouroDireto_Dia_v2.py
+# Ative o ambiente Python pythorix
+source ~/bin/pythorix/bin/activate
+
+DISPLAY=:0 ~/bin/pythorix/bin/python TesouroDireto_Dia_v2.py
 
 # Adicione alterações ao staging
 git add .
