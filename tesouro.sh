@@ -5,9 +5,9 @@ eval "$(ssh-agent -s)"
 ssh-add [camiho para a chave ssh]
 
 # Navegue até o diretório do repositório
-cd [caminho do repositorio local]/TD
+cd ~/GHub/TD
 
-DISPLAY=:0 [caminho do executável]/python3 TesouroDireto_Dia_v2.py
+DISPLAY=:0 python3 TesouroDireto_Dia_v2.py
 
 # Adicione alterações ao staging
 git add .
