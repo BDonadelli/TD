@@ -49,3 +49,20 @@ for filename in os.listdir(data_path):
     if 'SI_Acoes' in filename:
         os.remove(data_path+'/'+filename)
 os.rename(data_path+'/'+ 'statusinvest-busca-avancada.csv', data_path+'/'+'SI_Acoes.csv')
+
+### Fundamentus 
+
+
+import requests
+import pandas as pd
+from io import StringIO
+
+url1 = 'https://www.fundamentus.com.br/resultado.php'
+header = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest"
+}
+r1 = requests.get(url1, headers=header)
+dfs = pd.read_html(StringIO(r1.text), decimal=',', thousands='.')[0]
+
+dfs.to_csv("data/fundamentuspp.csv" , sep=';' )
