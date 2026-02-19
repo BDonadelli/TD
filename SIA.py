@@ -65,4 +65,4 @@ header = {
 r1 = requests.get(url1, headers=header)
 dfs = pd.read_html(StringIO(r1.text), decimal=',', thousands='.')[0]
 
-dfs.to_csv("data/fundamentuspp.csv", sep=';', encoding='latin-1', index=False)
+dfs.to_csv("data/fundamentuspp.csv", sep=';', encoding='utf-8', index=False)
