@@ -1,3 +1,8 @@
+
+print("==============================================")
+print("============== nova atualização ==============")
+print("==============================================")
+
 import os
 from time import sleep
 from datetime import date
@@ -83,6 +88,7 @@ def fechar_popups():
     """
     seletores = [
         # Botão de fechar por classe comum de modais
+        (By.CSS_SELECTOR, '.popup-fixed .btn-close'),   # combina dois identificadores únicos — a div pai popup-fixed e o botão btn-close 
         (By.CSS_SELECTOR, '.modal.open .modal-close'),
         (By.CSS_SELECTOR, '.modal.open button.btn-flat'),
         # Botão de fechar por ícone "close" dentro de modal aberto
@@ -197,7 +203,7 @@ else:
     print('====== ATENÇÃO: arquivo CSV não encontrado em data/. Verifique se o download foi concluído.')
 
 
-### Fundamentus 
+# ---  Fundamentus 
  
 
 import requests
