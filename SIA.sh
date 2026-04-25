@@ -22,3 +22,20 @@ git commit -m "Atualização automatica"
 
 # Faça o push para o repositório remoto
 git push origin main
+
+# Navegue até o diretório do repositório
+cd /home/yair/GHub/Finance-playground/
+
+# Ative o ambiente Python pythorix
+#source ~/bin/pythorix/bin/activate
+
+DISPLAY=:0 /home/yair/bin/pythorix/bin/python3 DT_FundsExplorer.py
+
+# Adicione alterações ao staging
+git add .
+
+# Faça o commit com uma mensagem
+git commit -m "Atualização automatica"
+
+# Faça o push para o repositório remoto
+git push origin main
