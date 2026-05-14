@@ -1,7 +1,7 @@
 
 print("==============================================")
 print("============== nova atualização ==============")
-print("==============================================")
+print("====== Status Invest e Fundamentus ===========")
 
 import os
 from time import sleep
