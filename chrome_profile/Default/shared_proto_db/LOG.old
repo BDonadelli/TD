@@ -1,2 +1,3 @@
-2026/09/03-11:53:46.882 13a43 Creating DB /home/yair/GHub/TD/chrome_profile/Default/shared_proto_db since it was missing.
-2026/09/03-11:53:46.888 13a43 Reusing MANIFEST /home/yair/GHub/TD/chrome_profile/Default/shared_proto_db/MANIFEST-000001
+2026/09/03-13:37:22.456 15a31 Reusing MANIFEST /home/yair/GHub/TD/chrome_profile/Default/shared_proto_db/MANIFEST-000001
+2026/09/03-13:37:22.456 15a31 Recovering log #3
+2026/09/03-13:37:22.457 15a31 Reusing old log /home/yair/GHub/TD/chrome_profile/Default/shared_proto_db/000003.log 
