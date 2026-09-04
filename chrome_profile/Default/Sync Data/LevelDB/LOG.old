@@ -1,3 +1,3 @@
-2026/09/03-13:37:22.132 15a30 Reusing MANIFEST /home/yair/GHub/TD/chrome_profile/Default/Sync Data/LevelDB/MANIFEST-000001
-2026/09/03-13:37:22.134 15a30 Recovering log #3
-2026/09/03-13:37:22.134 15a30 Reusing old log /home/yair/GHub/TD/chrome_profile/Default/Sync Data/LevelDB/000003.log 
+2026/09/03-19:59:03.289 1ac58 Reusing MANIFEST /home/yair/GHub/TD/chrome_profile/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/09/03-19:59:03.289 1ac58 Recovering log #3
+2026/09/03-19:59:03.289 1ac58 Reusing old log /home/yair/GHub/TD/chrome_profile/Default/Sync Data/LevelDB/000003.log 
