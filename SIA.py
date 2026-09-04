@@ -156,9 +156,24 @@ def _ler_csv_com_encoding(caminho_csv):
     em nomes de empresas com acento.
     """
     try:
-        return pd.read_csv(caminho_csv, sep=None, engine='python', encoding='utf-8')
+        df = pd.read_csv(caminho_csv, sep=None, engine='python', encoding='utf-8')
     except UnicodeDecodeError:
-        return pd.read_csv(caminho_csv, sep=None, engine='python', encoding='latin-1')
+        df = pd.read_csv(caminho_csv, sep=None, engine='python', encoding='latin-1')
+    return _remover_apostrofo_forcado(df)
+
+
+def _remover_apostrofo_forcado(df):
+    """
+    O Status Invest (e às vezes o Fundamentus) exporta números como texto
+    com um apóstrofo (') na frente, ex.: "'10,99" ou "'-18.860,61". É um
+    truque para o Excel não mexer no formato brasileiro (vírgula decimal),
+    mas esse apóstrofo acaba subindo literalmente pro Google Sheets. Aqui
+    a gente tira esse apóstrofo de todas as colunas de texto antes do
+    envio, mantendo o valor original (só sem a marcação de "forçar texto").
+    """
+    for col in df.select_dtypes(include='object').columns:
+        df[col] = df[col].astype(str).str.replace(r"^'", '', regex=True)
+    return df
 
 
 def enviar_csv_para_sheets(caminho_csv, nome_aba, spreadsheet_id=SPREADSHEET_ID,
@@ -198,11 +213,15 @@ def enviar_csv_para_sheets(caminho_csv, nome_aba, spreadsheet_id=SPREADSHEET_ID,
 
     aba.clear()
     aba.update([[f'Atualizado em: {data_atualizacao}']], 'A1')
-    aba.update([df.columns.values.tolist()] + df.values.tolist(), 'A2')
+    # value_input_option='USER_ENTERED' faz o Sheets interpretar os
+    # valores como se você tivesse digitado (respeitando o locale da
+    # planilha), então "18.860,61" vira número de verdade em vez de
+    # ficar preso como texto puro.
+    aba.update([df.columns.values.tolist()] + df.values.tolist(), 'A2',
+               value_input_option='USER_ENTERED')
     print(f'  ✅ Aba "{nome_aba}" atualizada no Google Sheets ({len(df)} linhas, '
           f'data em A1: {data_atualizacao})')
 
-
 print('====== Enviando para o Google Sheets')
-enviar_csv_para_sheets(arquivo_destino, 'StatusInvest')
+enviar_csv_para_sheets(arquivo_destino, 'StatusInv-Acoes')
 enviar_csv_para_sheets(os.path.join(data_path, 'fundamentuspp.csv'), 'Fundamentus')
