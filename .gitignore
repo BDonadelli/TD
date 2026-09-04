@@ -1,2 +1,3 @@
 .com.google*
 chrome_profile/
+*.json
